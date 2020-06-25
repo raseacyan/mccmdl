@@ -60,8 +60,7 @@ var firebaseConfig = {
     "client_email": process.env.FIREBASE_CLIENT_EMAIL,
     "project_id": process.env.FIREBASE_PROJECT_ID,    
     }),
-    databaseURL: process.env.FIREBASE_DB_URL, 
-    storageBucket: process.env.FIREBASE_SB_URL
+    databaseURL: process.env.FIREBASE_DB_URL,    
   };
 
 
@@ -69,7 +68,7 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 let db = firebase.firestore(); 
-let bucket = firebase.storage().bucket();
+
 
 
 
