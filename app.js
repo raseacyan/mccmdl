@@ -115,6 +115,11 @@ app.post('/webhook', (req, res) => {
 app.use('/uploads', express.static('uploads'));
 
 
+app.get('/',function(req,res){    
+    res.send('Your app is up and running');
+});
+
+
 app.get('/test',function(req,res){    
     res.render('test.ejs');
 });
