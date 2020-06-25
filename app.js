@@ -589,7 +589,7 @@ const handleMessage = (sender_psid, received_message) => {
 
           switch(user_message) {
         case "hi":
-          greeting(sender_id);
+          greeting(sender_psid);
           break;
         case "text":
           textReply(sender_psid);
